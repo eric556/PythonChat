@@ -2,6 +2,17 @@ import socket
 import sys
 import _thread
 
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
+
 clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 host = input("server address: ")
 port = int(input("server port: "))
